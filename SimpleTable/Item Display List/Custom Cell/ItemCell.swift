@@ -51,8 +51,8 @@ extension ItemCell {
     }
     private func setupImages() {
         if let primaryImage1 = cellData?.primaryImage1 { primaryImageView1.image = UIImage(named: primaryImage1) }
-        if let primaryImage2 = cellData?.primaryImage1 { primaryImageView1.image = UIImage(named: primaryImage2) }
-        if let secondaryImage = cellData?.primaryImage1 { primaryImageView1.image = UIImage(named: secondaryImage) }
+        if let primaryImage2 = cellData?.primaryImage2 { primaryImageView2.image = UIImage(named: primaryImage2) }
+        if let secondaryImage = cellData?.secondaryImage { secondaryImageView.image = UIImage(named: secondaryImage) }
     }
     private func setupText() {
         if let title = cellData?.title {
