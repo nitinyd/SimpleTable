@@ -99,10 +99,9 @@
 		1EE2E5BA27C10F0700A043C7 /* SimpleTable */ = {
 			isa = PBXGroup;
 			children = (
+				1EE2E5EE27C110B500A043C7 /* Item Display List */,
 				1EE2E5BB27C10F0700A043C7 /* AppDelegate.swift */,
 				1EE2E5BD27C10F0700A043C7 /* SceneDelegate.swift */,
-				1EE2E5BF27C10F0700A043C7 /* ItemDisplayTableVC.swift */,
-				1EE2E5C127C10F0700A043C7 /* Main.storyboard */,
 				1EE2E5C427C10F0800A043C7 /* Assets.xcassets */,
 				1EE2E5C627C10F0800A043C7 /* LaunchScreen.storyboard */,
 				1EE2E5C927C10F0800A043C7 /* Info.plist */,
@@ -125,6 +124,39 @@
 				1EE2E5DE27C10F0800A043C7 /* SimpleTableUITestsLaunchTests.swift */,
 			);
 			path = SimpleTableUITests;
+			sourceTree = "<group>";
+		};
+		1EE2E5EB27C1107D00A043C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1EE2E5C127C10F0700A043C7 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1EE2E5EC27C1108D00A043C7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1EE2E5BF27C10F0700A043C7 /* ItemDisplayTableVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1EE2E5ED27C1109500A043C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1EE2E5EE27C110B500A043C7 /* Item Display List */ = {
+			isa = PBXGroup;
+			children = (
+				1EE2E5ED27C1109500A043C7 /* Model */,
+				1EE2E5EB27C1107D00A043C7 /* Views */,
+				1EE2E5EC27C1108D00A043C7 /* Controllers */,
+			);
+			path = "Item Display List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
