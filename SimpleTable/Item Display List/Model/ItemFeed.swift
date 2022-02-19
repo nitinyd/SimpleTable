@@ -8,16 +8,16 @@
 import Foundation
 
 struct ItemFeed {
-    let sections = [
-        ItemModel(primaryImage1: "", primaryImage2: "", secondaryImage: "", sectionTitle: ""),
-        ItemModel(primaryImage1: "", primaryImage2: "", secondaryImage: "", sectionTitle: ""),
-        ItemModel(primaryImage1: "", primaryImage2: "", secondaryImage: "", sectionTitle: ""),
-        ItemModel(primaryImage1: "", primaryImage2: "", secondaryImage: "", sectionTitle: ""),
-        ItemModel(primaryImage1: "", primaryImage2: "", secondaryImage: "", sectionTitle: ""),
-        ItemModel(primaryImage1: "", primaryImage2: "", secondaryImage: "", sectionTitle: ""),
-        ItemModel(primaryImage1: "", primaryImage2: "", secondaryImage: "", sectionTitle: ""),
-        ItemModel(primaryImage1: "", primaryImage2: "", secondaryImage: "", sectionTitle: ""),
-        ItemModel(primaryImage1: "", primaryImage2: "", secondaryImage: "", sectionTitle: ""),
-        ItemModel(primaryImage1: "", primaryImage2: "", secondaryImage: "", sectionTitle: "")
+    let sections: [ItemSectionModel] = [
+        ItemSectionModel(sectionTitle: "Section1"),
+        ItemSectionModel(sectionTitle: "Section2"),
+        ItemSectionModel(sectionTitle: "Section3"),
+        ItemSectionModel(sectionTitle: "Section4"),
+        ItemSectionModel(sectionTitle: "Section5"),
+        ItemSectionModel(sectionTitle: "Section6"),
+        ItemSectionModel(sectionTitle: "Section7"),
+        ItemSectionModel(sectionTitle: "Section8"),
+        ItemSectionModel(sectionTitle: "Section9"),
+        ItemSectionModel(sectionTitle: "Section10")
     ]
 }
