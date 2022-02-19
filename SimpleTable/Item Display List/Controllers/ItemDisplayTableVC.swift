@@ -45,6 +45,7 @@ extension ItemDisplayTableVC {
         setupColors()
     }
     private func setupColors() {
+        view.backgroundColor = .darkGray
         tableView.backgroundColor = .clear
     }
     private func setupTableView() {
