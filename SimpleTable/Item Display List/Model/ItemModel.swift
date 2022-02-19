@@ -11,5 +11,5 @@ struct ItemModel {
     let primaryImage1: String
     let primaryImage2: String
     let secondaryImage: String
-    let title: String
+    var title: String
 }
