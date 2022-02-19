@@ -29,9 +29,9 @@ class ItemDisplayHeader: UITableViewHeaderFooterView {
 extension ItemDisplayHeader {
     private func setupUI() {
         setupColors()
+        titleLabel.sizeToFit()
     }
     private func setupColors() {
-        xibContentView.backgroundColor = .clear
         titleLabel.backgroundColor = .clear
         titleLabel.textColor = .black
     }
@@ -45,12 +45,12 @@ extension ItemDisplayHeader {
 extension ItemDisplayHeader {
     static func calculateHeaderViewHeight(title: String) -> CGFloat {
         var totalHeaderHeight: CGFloat = 0
-        totalHeaderHeight += 5
+        totalHeaderHeight += 10
         if !title.isEmpty {
             let font = UIFont.systemFont(ofSize: 20)
             totalHeaderHeight += font.singleLineHeight()
         }
-        totalHeaderHeight += 5
+        totalHeaderHeight += 16
         return totalHeaderHeight
     }
 }
