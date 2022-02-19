@@ -43,9 +43,21 @@ extension ItemDisplayTableVC: UITableViewDelegate, UITableViewDataSource {
         return feed.sections[section].cellsData.count
     }
     
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 4))
+        footerView.backgroundColor = .gray
+        return footerView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 4
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let itemCell = tableView.dequeueReusableCell(withIdentifier: "\(ItemCell.self)") as! ItemCell
-        itemCell.cellData = feed.sections[indexPath.section].cellsData[indexPath.row]
+        var cellData = feed.sections[indexPath.section].cellsData[indexPath.row]
+        cellData.title += " in section \(indexPath.section + 1)"
+        itemCell.cellData = cellData
         return itemCell
     }
 }
@@ -56,7 +68,6 @@ extension ItemDisplayTableVC {
         setupColors()
     }
     private func setupColors() {
-        view.backgroundColor = .darkGray
         tableView.backgroundColor = .clear
     }
     private func setupTableView() {
@@ -66,6 +77,8 @@ extension ItemDisplayTableVC {
         tableView.register(nib, forCellReuseIdentifier: "\(ItemCell.self)")
         nib = UINib(nibName: "\(ItemDisplayHeader.self)", bundle: nil)
         tableView.register(nib, forHeaderFooterViewReuseIdentifier: "\(ItemDisplayHeader.self)")
+        tableView.sectionHeaderTopPadding = 0
+        tableView.contentInsetAdjustmentBehavior = .never
     }
 }
 
