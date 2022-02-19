@@ -21,6 +21,7 @@
 		1EE2E5F527C1170100A043C7 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE2E5F327C1170100A043C7 /* ItemCell.swift */; };
 		1EE2E5F627C1170100A043C7 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EE2E5F427C1170100A043C7 /* ItemCell.xib */; };
 		1EE2E5F927C117A000A043C7 /* ItemSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE2E5F827C117A000A043C7 /* ItemSectionModel.swift */; };
+		1EE2E5FB27C11CB100A043C7 /* LayoutConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE2E5FA27C11CB100A043C7 /* LayoutConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		1EE2E5F327C1170100A043C7 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		1EE2E5F427C1170100A043C7 /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
 		1EE2E5F827C117A000A043C7 /* ItemSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSectionModel.swift; sourceTree = "<group>"; };
+		1EE2E5FA27C11CB100A043C7 /* LayoutConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				1EE2E5EB27C1107D00A043C7 /* Views */,
 				1EE2E5EC27C1108D00A043C7 /* Controllers */,
 				1EE2E5F727C1170A00A043C7 /* Custom Cell */,
+				1EE2E5FA27C11CB100A043C7 /* LayoutConstants.swift */,
 			);
 			path = "Item Display List";
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				1EE2E5C027C10F0700A043C7 /* ItemDisplayTableVC.swift in Sources */,
 				1EE2E5F927C117A000A043C7 /* ItemSectionModel.swift in Sources */,
 				1EE2E5BC27C10F0700A043C7 /* AppDelegate.swift in Sources */,
+				1EE2E5FB27C11CB100A043C7 /* LayoutConstants.swift in Sources */,
 				1EE2E5F527C1170100A043C7 /* ItemCell.swift in Sources */,
 				1EE2E5F027C1134500A043C7 /* ItemModel.swift in Sources */,
 				1EE2E5F227C1138B00A043C7 /* ItemFeed.swift in Sources */,
