@@ -33,7 +33,9 @@ extension ItemDisplayTableVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let itemCell = tableView.dequeueReusableCell(withIdentifier: "\(ItemCell.self)") as! ItemCell
+        itemCell.cellData = feed.sections[indexPath.section].cellsData[indexPath.row]
+        return itemCell
     }
 }
 
