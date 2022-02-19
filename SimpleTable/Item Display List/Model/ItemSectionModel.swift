@@ -9,5 +9,5 @@ import Foundation
 
 struct ItemSectionModel {
     let sectionTitle: String
-    let cellsData: [ItemModel] = [ItemModel(primaryImage1: "", primaryImage2: "", secondaryImage: "", title: "")]
+    let cellsData: [ItemModel] = [ItemModel(primaryImage1: "Primary Image 1", primaryImage2: "Primary Image 2", secondaryImage: "Secondary Image", title: "Bunch of Images")]
 }
