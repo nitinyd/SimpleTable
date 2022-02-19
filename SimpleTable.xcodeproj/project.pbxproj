@@ -16,6 +16,8 @@
 		1EE2E5D327C10F0800A043C7 /* SimpleTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE2E5D227C10F0800A043C7 /* SimpleTableTests.swift */; };
 		1EE2E5DD27C10F0800A043C7 /* SimpleTableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE2E5DC27C10F0800A043C7 /* SimpleTableUITests.swift */; };
 		1EE2E5DF27C10F0800A043C7 /* SimpleTableUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE2E5DE27C10F0800A043C7 /* SimpleTableUITestsLaunchTests.swift */; };
+		1EE2E5F027C1134500A043C7 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE2E5EF27C1134500A043C7 /* ItemModel.swift */; };
+		1EE2E5F227C1138B00A043C7 /* ItemFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE2E5F127C1138B00A043C7 /* ItemFeed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		1EE2E5D827C10F0800A043C7 /* SimpleTableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EE2E5DC27C10F0800A043C7 /* SimpleTableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableUITests.swift; sourceTree = "<group>"; };
 		1EE2E5DE27C10F0800A043C7 /* SimpleTableUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1EE2E5EF27C1134500A043C7 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		1EE2E5F127C1138B00A043C7 /* ItemFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemFeed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,8 @@
 		1EE2E5ED27C1109500A043C7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1EE2E5EF27C1134500A043C7 /* ItemModel.swift */,
+				1EE2E5F127C1138B00A043C7 /* ItemFeed.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -292,6 +298,8 @@
 			files = (
 				1EE2E5C027C10F0700A043C7 /* ItemDisplayTableVC.swift in Sources */,
 				1EE2E5BC27C10F0700A043C7 /* AppDelegate.swift in Sources */,
+				1EE2E5F027C1134500A043C7 /* ItemModel.swift in Sources */,
+				1EE2E5F227C1138B00A043C7 /* ItemFeed.swift in Sources */,
 				1EE2E5BE27C10F0700A043C7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
