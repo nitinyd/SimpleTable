@@ -9,15 +9,15 @@ import Foundation
 
 struct ItemFeed {
     let sections: [ItemSectionModel] = [
-        ItemSectionModel(sectionTitle: "Section1"),
-        ItemSectionModel(sectionTitle: "Section2"),
-        ItemSectionModel(sectionTitle: "Section3"),
-        ItemSectionModel(sectionTitle: "Section4"),
-        ItemSectionModel(sectionTitle: "Section5"),
-        ItemSectionModel(sectionTitle: "Section6"),
-        ItemSectionModel(sectionTitle: "Section7"),
-        ItemSectionModel(sectionTitle: "Section8"),
-        ItemSectionModel(sectionTitle: "Section9"),
-        ItemSectionModel(sectionTitle: "Section10")
+        ItemSectionModel(sectionTitle: "Section-1"),
+        ItemSectionModel(sectionTitle: "Section-2"),
+        ItemSectionModel(sectionTitle: "Section-3"),
+        ItemSectionModel(sectionTitle: "Section-4"),
+        ItemSectionModel(sectionTitle: "Section-5"),
+        ItemSectionModel(sectionTitle: "Section-6"),
+        ItemSectionModel(sectionTitle: "Section-7"),
+        ItemSectionModel(sectionTitle: "Section-8"),
+        ItemSectionModel(sectionTitle: "Section-9"),
+        ItemSectionModel(sectionTitle: "Section-10")
     ]
 }
