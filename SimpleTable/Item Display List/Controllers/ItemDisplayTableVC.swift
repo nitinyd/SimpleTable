@@ -29,7 +29,7 @@ extension ItemDisplayTableVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return feed.sections[section].cellsData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -48,6 +48,8 @@ extension ItemDisplayTableVC {
     private func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
+        let nib = UINib(nibName: "\(ItemCell.self)", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "\(ItemCell.self)")
     }
 }
 
