@@ -6,5 +6,5 @@
 //
 
 struct LayoutConstants {
-    static let imageCornerRadius = 3.0
+    static let imageCornerRadius = 5.0
 }
