@@ -24,6 +24,17 @@ class ItemDisplayTableVC: UIViewController {
 //MARK:- TableView Delegate Methods
 extension ItemDisplayTableVC: UITableViewDelegate, UITableViewDataSource {
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let sectionHeaderView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "\(ItemDisplayHeader.self)") as? ItemDisplayHeader
+        else { return nil }
+        sectionHeaderView.title = feed.sections[section].sectionTitle
+        return sectionHeaderView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return ItemDisplayHeader.calculateHeaderViewHeight(title: feed.sections[section].sectionTitle)
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return feed.sections.count
     }
@@ -51,8 +62,10 @@ extension ItemDisplayTableVC {
     private func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        let nib = UINib(nibName: "\(ItemCell.self)", bundle: nil)
+        var nib = UINib(nibName: "\(ItemCell.self)", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "\(ItemCell.self)")
+        nib = UINib(nibName: "\(ItemDisplayHeader.self)", bundle: nil)
+        tableView.register(nib, forHeaderFooterViewReuseIdentifier: "\(ItemDisplayHeader.self)")
     }
 }
 
